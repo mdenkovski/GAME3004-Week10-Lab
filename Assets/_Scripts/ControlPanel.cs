@@ -96,7 +96,7 @@ public class ControlPanel : MonoBehaviour
 
         playerData.playerHealth = PlayerPrefs.GetInt("playerHealth");
 
-
+        Debug.Log("Game Loaded");
 
     }
 
@@ -118,6 +118,8 @@ public class ControlPanel : MonoBehaviour
         PlayerPrefs.SetInt("playerHealth", playerData.playerHealth);
 
         PlayerPrefs.Save();
+
+        Debug.Log("Game Saved");
     }
 
     private void OnApplicationQuit()
